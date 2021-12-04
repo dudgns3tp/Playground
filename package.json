@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@types/rx": "^4.1.2",
     "rxjs": "^7.4.0"
   },
   "devDependencies": {
