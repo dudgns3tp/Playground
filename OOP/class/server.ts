@@ -6,7 +6,7 @@ export class Server {
     };
 
     synchronize(clientDataStore: DataStore): DataStore {
-        if (clientDataStore.timestamp < this.store.timestamp) {
+        if (clientDataStore.timestamp > this.store.timestamp) {
             this.store = clientDataStore;
             return undefined;
         } else if (clientDataStore.timestamp < this.store.timestamp) {
